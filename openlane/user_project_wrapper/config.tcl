@@ -31,9 +31,9 @@ set ::env(VERILOG_FILES) "\
 
 ## Clock configurations
 set ::env(CLOCK_PORT) "user_clock2"
-set ::env(CLOCK_NET) "mprj.clk"
+set ::env(CLOCK_NET) "inst_eFPGA_top.wb_clk_i"
 
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "40"
 
 ## Internal Macros
 ### Macro Placement
@@ -42,13 +42,14 @@ set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$script_dir/../../caravel/verilog/rtl/defines.v \
+	../verilog/rtl/eFPGA_top.v \
 	$script_dir/../../verilog/rtl/user_proj_example.v"
 
 set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/user_proj_example.lef"
+	$script_dir/../../lef/eFPGA_top.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/user_proj_example.gds"
+	$script_dir/../../gds/eFPGA_top.gds"
 
 set ::env(GLB_RT_MAXLAYER) 5
 
@@ -67,3 +68,18 @@ set ::env(DIODE_INSERTION_STRATEGY) 0
 set ::env(FILL_INSERTION) 0
 set ::env(TAP_DECAP_INSERTION) 0
 set ::env(CLOCK_TREE_SYNTH) 0
+
+set ::env(PL_DIAMOND_SEARCH_HEIGHT) 2000
+set ::env(ROUTING_CORES) 10
+set ::env(GLB_RT_ALLOW_CONGESTION) 1
+set ::env(VDD_PIN) "VPWR"
+set ::env(GND_PIN) "VGND"
+#set ::env(VDD_NETS) "vccd1"
+#set ::env(GND_NETS) "vssd1"
+#set ::env(VDD_NETS) "vccd1 VPWR"
+#set ::env(GND_NETS) "vssd1 VGND"
+set ::env(GLB_RT_OBS) "met5 20 20 2900 3500"
+#set ::env(FP_PDN_UPPER_LAYER) "met4"
+#set ::env(FP_PDN_LOWER_LAYER) "met5"
+#set ::env(FP_PDN_HPITCH) "500"
+#set ::env(FP_PDN_VPITCH) "500"
