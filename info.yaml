@@ -1,18 +1,10 @@
 ---
 project:
-<<<<<<< HEAD
   description: "FABulous SKY - a heterogeneous FPGA fabric in Skywater130"
   foundry: "SkyWater"
   git_url: "https://github.com/FPGA-Research-Manchester/FABulous-Sky---a-heterogeneous-FPGA-fabric-in-Skywater130"
   organization: ""
   organization_url: ""
-=======
-  description: "FABulous-Sky---a-heterogeneous-FPGA-fabric-in-Skywater130"
-  foundry: "SkyWater"
-  git_url: "https://github.com/FPGA-Research-Manchester/FABulous-Sky---a-heterogeneous-FPGA-fabric-in-Skywater130"
-  organization: "The University of Manchester"
-  organization_url: "https://www.manchester.ac.uk/"
->>>>>>> c5f44258c8e1de9c4955df65b98b6961d2dd91fa
   owner: "Nguyen Dao"
   process: "SKY130"
   project_name: "FABulous SKY"
