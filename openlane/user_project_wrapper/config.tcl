@@ -72,8 +72,8 @@ set ::env(CLOCK_TREE_SYNTH) 0
 set ::env(PL_DIAMOND_SEARCH_HEIGHT) 2000
 set ::env(ROUTING_CORES) 10
 set ::env(GLB_RT_ALLOW_CONGESTION) 1
-set ::env(VDD_PIN) "VPWR"
-set ::env(GND_PIN) "VGND"
+set ::env(VDD_PIN) "vccd1"
+set ::env(GND_PIN) "vssd1"
 #set ::env(VDD_NETS) "vccd1"
 #set ::env(GND_NETS) "vssd1"
 #set ::env(VDD_NETS) "vccd1 VPWR"
@@ -81,5 +81,5 @@ set ::env(GND_PIN) "VGND"
 set ::env(GLB_RT_OBS) "met5 20 20 2900 3500"
 #set ::env(FP_PDN_UPPER_LAYER) "met4"
 #set ::env(FP_PDN_LOWER_LAYER) "met5"
-#set ::env(FP_PDN_HPITCH) "500"
-#set ::env(FP_PDN_VPITCH) "500"
+set ::env(FP_PDN_HPITCH) "500"
+set ::env(FP_PDN_VPITCH) "500"
