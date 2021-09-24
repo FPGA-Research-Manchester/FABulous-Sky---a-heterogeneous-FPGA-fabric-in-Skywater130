@@ -1405,7 +1405,7 @@ module RAM_IO (N1BEG, N2BEG, N2BEGb, N4BEG, N1END, N2MID, N2END, N4END, E1END, E
 	.J_NS1_BEG2(J_NS1_BEG[2]),
 	.J_NS1_BEG3(J_NS1_BEG[3]),
 	.ConfigBits(ConfigBits[328-1:48]),
-	.ConfigBits_N(ConfigBits[328-1:48])
+	.ConfigBits_N(ConfigBits_N[328-1:48])
 	);
 
 endmodule

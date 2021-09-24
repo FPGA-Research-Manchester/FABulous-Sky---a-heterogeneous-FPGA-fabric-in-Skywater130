@@ -2091,7 +2091,7 @@ module RegFile (N1BEG, N2BEG, N2BEGb, N4BEG, NN4BEG, N1END, N2MID, N2END, N4END,
 	.J_l_GH_BEG2(J_l_GH_BEG[2]),
 	.J_l_GH_BEG3(J_l_GH_BEG[3]),
 	.ConfigBits(ConfigBits[414-1:2]),
-	.ConfigBits_N(ConfigBits[414-1:2])
+	.ConfigBits_N(ConfigBits_N[414-1:2])
 	);
 
 endmodule

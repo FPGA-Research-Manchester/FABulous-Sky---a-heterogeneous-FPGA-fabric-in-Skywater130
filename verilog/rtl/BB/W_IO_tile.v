@@ -759,7 +759,7 @@ module W_IO (E1BEG, E2BEG, E2BEGb, EE4BEG, E6BEG, W1END, W2MID, W2END, WW4END, W
 	.B_I(B_I),
 	.B_T(B_T),
 	.ConfigBits(ConfigBits[114-1:8]),
-	.ConfigBits_N(ConfigBits[114-1:8])
+	.ConfigBits_N(ConfigBits_N[114-1:8])
 	);
 
 endmodule
